@@ -9,11 +9,14 @@ using namespace std;
 int main()
 {
     int low, high, i, flag;
+    string filename;
 
     cout << "Enter two numbers(intervals): ";
     cin >> low >> high;
+    cout << "Enter file name: ";
+    cin >> filename;
 
-    ofstream myfile("C:\\MyWorkspace\\Temp\\Prime_Number_Generator.txt");
+    ofstream myfile(filename);
 
     if (myfile.is_open())
     {
